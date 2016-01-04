@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{% block title %}Appname{% endblock %}</title>
+
+{% block stylesheets %}
+{% endblock %}
+
+</head>
+<body>
+{% block bodycontent %}
+{% endblock %}
+{% block javascripts %}
+{% endblock %}
+</body>
+</html>
+

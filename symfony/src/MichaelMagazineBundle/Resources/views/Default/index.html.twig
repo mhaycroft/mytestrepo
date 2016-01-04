@@ -1,0 +1,24 @@
+{% extends 'MichaelMagazineBundle:Default:mybase.html.twig' %}
+
+{% block stylesheets %}
+	{% stylesheets filter='cssrewrite'
+		'%kernel.root_dir%/../vendor/twbs/bootstrap/dist/css/bootstrap.css'
+		'%kernel.root_dir%/../vendor/twbs/bootstrap/dist/css/bootstrap-theme.css'
+	%}
+	<link rel="stylesheet" href="{{ asset_url }}" />
+	{% endstylesheets %}
+{% endblock %}
+
+{% block bodycontent %}
+new body content
+{% endblock %}
+
+{% block javascripts %}
+	{% javascripts
+		'%kernel.root_dir%/../vendor/twbs/bootstrap/dist/js/bootstrap.js'
+		'%kernel.root_dir%/../vendor/components/jquery/jquery.js'
+		'@MichaelMagazineBundle/xyz.js'
+	%}
+<script type="text/javascript" src="{{ asset_url }}"></script>
+{% endjavascripts %}
+{% endblock %}

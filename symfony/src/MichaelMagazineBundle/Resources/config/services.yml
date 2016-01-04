@@ -1,0 +1,4 @@
+services:
+#    michael_magazine.example:
+#        class: MichaelMagazineBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
